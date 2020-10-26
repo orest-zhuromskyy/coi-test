@@ -10,8 +10,8 @@
  */
 @font-face {
   font-family: 'Georgia';
-  src: url("../fonts/Matahari-800ExtraBold.eot");
-  src: url("../fonts/Matahari-700Bold.ttf") format("truetype"); }
+  src: url("/fonts/Matahari-800ExtraBold.eot");
+  src: url("/fonts/Matahari-700Bold.ttf") format("truetype"); }
 
 html {
   height: 100%; }
@@ -242,7 +242,7 @@ textarea:focus, input:focus {
     position: relative; }
     .banner .banner-container__first-section, .banner .banner-container__second-section, .banner .banner-container__third-section {
       padding-left: 150px;
-      background: url("../img/Rectangle.png");
+      background: url("img/Rectangle.png");
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
@@ -591,7 +591,7 @@ textarea:focus, input:focus {
           .help .help-container .row .col-right .form .container-checkbox .custom-checkbox:checked + label::before {
             border-color: #150433;
             background-color: #150433;
-            background-image: url("../img/arrow.png"); }
+            background-image: url("img/arrow.png"); }
         .help .help-container .row .col-right .form .container-radio {
           display: flex;
           justify-content: space-between;
@@ -622,7 +622,7 @@ textarea:focus, input:focus {
             background-position: center center;
             background-size: 50% 50%; }
           .help .help-container .row .col-right .form .container-radio .custom-radio > input:checked + span::before {
-            background-image: url("../img/circle.png"); }
+            background-image: url("img/circle.png"); }
         .help .help-container .row .col-right .form .icons {
           position: absolute;
           top: 10px;
@@ -879,7 +879,7 @@ textarea:focus, input:focus {
   z-index: 50; }
 
 .slick-prev {
-  background: url("../img/buttons/prev.svg") no-repeat;
+  background: url("img/buttons/prev.svg") no-repeat;
   bottom: 50%;
   left: 0;
   margin-left: 12vw; }
@@ -893,7 +893,7 @@ textarea:focus, input:focus {
       margin-left: 30px; } }
 
 .slick-next {
-  background: url("../img/buttons/next.svg") no-repeat;
+  background: url("img/buttons/next.svg") no-repeat;
   bottom: 50%;
   right: 0;
   margin-right: 12.5vw; }
@@ -915,7 +915,7 @@ textarea:focus, input:focus {
     bottom: 65px; } }
 
 .slick-prev:hover {
-  background: url("../img/buttons/arrow-prev.png") no-repeat;
+  background: url("img/buttons/arrow-prev.png") no-repeat;
   content: "";
   display: inline-block;
   height: 48px;
@@ -924,7 +924,7 @@ textarea:focus, input:focus {
   cursor: pointer; }
 
 .slick-next:hover {
-  background: url("../img/buttons/arrow-next.png") no-repeat;
+  background: url("img/buttons/arrow-next.png") no-repeat;
   content: "";
   display: inline-block;
   height: 48px;
@@ -1026,7 +1026,7 @@ textarea:focus, input:focus {
   transition: all 0.5s; }
 
 .arrow::after {
-  background: url("../img/arrow-select.png") no-repeat;
+  background: url("img/arrow-select.png") no-repeat;
   height: 20px;
   width: 20px;
   top: 6px;

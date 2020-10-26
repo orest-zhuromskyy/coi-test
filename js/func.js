@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  const iconError = '../app/img/error.png';
-  const iconSuccess = '../app/img/success-arrow.png';
+  const iconError = '/img/error.png';
+  const iconSuccess = '/img/success-arrow.png';
   fixedHeader();
   $(window).scroll(function () {
     fixedHeader();
@@ -103,29 +103,6 @@ $(document).ready(function () {
     setActiveLinkFooter(a);
     setActiveLinkHeader(a);
   });
-  $('.custom-select-wrapper').on('click', function () {
-    const hasClassOpen = $('.custom-select').hasClass('open');
-    if (hasClassOpen) {
-      $('.custom-select').removeClass('open');
-    } else {
-      $('.custom-select').addClass('open');
-    }
-  })
-  for (const option of document.querySelectorAll(".custom-option")) {
-    option.addEventListener('click', function() {
-      if (!this.classList.contains('selected')) {
-        this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
-        this.classList.add('selected');
-        this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
-      }
-    })
-  }
-  window.addEventListener('click', function(e) {
-    const select = document.querySelector('.custom-select')
-    if (!select.contains(e.target)) {
-      select.classList.remove('open');
-    }
-  });
 });
 $('.banner-container').not('.slick').slick({
   infinite: true,
@@ -211,3 +188,22 @@ function setEmptyValue () {
   $('#icon-validation-name').attr('src', '');
   $('#icon-validation-name').addClass('hide');
 }
+document.getElementsByClassName('.custom-select-wrapper').addEventListener('click', function () {
+  this.querySelector('.custom-select').classList.toggle('open');
+})
+
+for (const option of document.querySelectorAll(".custom-option")) {
+  option.addEventListener('click', function () {
+    if (!this.classList.contains('selected')) {
+      this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+      this.classList.add('selected');
+      this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
+    }
+  })
+}
+window.addEventListener('click', function(e) {
+  const select = document.querySelector('.custom-select')
+  if (!select.contains(e.target)) {
+    select.classList.remove('open');
+  }
+});
