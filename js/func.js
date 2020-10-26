@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  const iconError = '/img/error.png';
-  const iconSuccess = '/img/success-arrow.png';
+  const iconError = 'img/error.png';
+  const iconSuccess = 'img/success-arrow.png';
   fixedHeader();
   $(window).scroll(function () {
     fixedHeader();
